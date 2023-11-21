@@ -437,7 +437,7 @@ func getFullyQualifiedImageArch(image, release string) string {
 }
 
 func getFullyQualifiedImageDebian(image, release string) string {
-	imageFull := "quay.io/toolbx/" + image
+	imageFull := "quay.io/pennbauman/" + image
 	return imageFull
 }
 

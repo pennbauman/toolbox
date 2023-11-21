@@ -183,7 +183,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:10"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:10"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -198,7 +198,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list --images
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:10"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:10"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -213,7 +213,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:11"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:11"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -228,7 +228,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list --images
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:11"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:11"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -243,7 +243,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:12"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:12"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -258,7 +258,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list --images
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:12"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:12"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -273,7 +273,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:testing"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:testing"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -288,7 +288,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list --images
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:testing"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:testing"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -303,7 +303,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:unstable"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:unstable"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
@@ -318,7 +318,7 @@ teardown() {
   run --keep-empty-lines --separate-stderr "$TOOLBOX" list --images
 
   assert_success
-  assert_line --index 1 --partial "quay.io/toolbx/debian-toolbox:unstable"
+  assert_line --index 1 --partial "quay.io/pennbauman/debian-toolbox:unstable"
   assert [ ${#lines[@]} -eq 3 ]
   assert [ ${#stderr_lines[@]} -eq 0 ]
 }
